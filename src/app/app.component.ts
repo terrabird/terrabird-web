@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   hide = true;
+  userName='';
+  password='';
+
+  loginUser(){
+    console.log(this.userName);
+  }
 }
