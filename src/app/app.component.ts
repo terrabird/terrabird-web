@@ -6,11 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  hide = true;
-  userName='';
-  password='';
 
-  loginUser(){
-    console.log(this.userName);
-  }
 }

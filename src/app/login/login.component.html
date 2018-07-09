@@ -1,0 +1,36 @@
+<mat-card style="width:25%; margin:auto">
+  <div style="text-align:center; padding:2%">
+    <button mat-raised-button mat-raised-button color="primary" (click)="loginUser();">Login With Google</button>
+  </div>
+  <div style="text-align:center; padding:2%">
+    <button mat-raised-button mat-raised-button color="primary" (click)="loginUser();">Login With Facebook</button>
+  </div>
+  <div style="text-align:center">
+    <b><p>-------------  OR  ------------</p></b>
+  </div>
+  <mat-toolbar>
+    <div style="text-align: center;margin-left: auto;margin-right: auto">
+      <h2><span>Terrabird Login</span></h2>
+    </div>
+  </mat-toolbar>
+  <mat-card-content style="margin-top: 20px;">
+    <div id="loginForm">
+      <mat-form-field>
+        <input matInput placeholder="Enter email address" [(ngModel)]="userName">
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput placeholder="Enter your password" [type]="hide ? 'password' : 'text'" [(ngModel)]="password">
+      </mat-form-field>
+      <button mat-raised-button mat-raised-button color="primary" (click)="loginUser();">Login</button>
+    </div>
+  </mat-card-content>
+  <div>
+    <div style="display:inline">
+      <button mat-button><u><b>Forgot Password</b></u></button>
+    </div>
+    <div style="display:inline; float:right">
+      <button mat-button><u><b>Register Me!</b></u></button>
+    </div>
+
+  </div>
+</mat-card>
